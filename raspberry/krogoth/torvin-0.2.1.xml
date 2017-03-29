@@ -14,5 +14,9 @@
     <linkfile dest="sources/base" src="raspberry/krogoth"/>
   </project>
 
+  <project remote="yocto" revision="krogoth" name="poky" path="sources/poky"/>
+  <project remote="oe"    revision="krogoth" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="krogoth" name="meta-raspberrypi"  path="sources/meta-raspberrypi"/>
+  <project remote="bs"    revision="krogoth" name="berserk" path="sources/berserk"/>
 
 </manifest>
