@@ -20,13 +20,13 @@ $  chmod a+x ~/bin/repo
 ```
 
 Download the "berserk" source:  
-(example build v0.2.4 for Raspberry Pi 3, branch krogoth)  
+(example build v0.2.5 for Raspberry Pi 3, branch rocko)  
 
 ```sh
 $  PATH=${PATH}:~/bin
 $  mkdir torvin
 $  cd torvin
-$  repo init -u https://github.com/berserktv/bs-manifest -m raspberry/krogoth/torvin-0.2.4.xml
+$  repo init -u https://github.com/berserktv/bs-manifest -m raspberry/rocko/torvin-0.2.5.xml
 $  repo sync
 ```
 
