@@ -162,6 +162,8 @@ EOF
         -i conf/local.conf
 
     cp $TEMPLATES/* conf/
+    # AlexVit => after copying the value "MACHINE" from "shell.sh" is stored in build/conf/local.conf
+    sed -e "s,MACHINE ??=.*,MACHINE ??= '$MACHINE',g" -i conf/local.conf
 
     for s in $HOME/.oe $HOME/.yocto; do
         if [ -e $s/site.conf ]; then
