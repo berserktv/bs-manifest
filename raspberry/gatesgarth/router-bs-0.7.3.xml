@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="4" revision="gatesgarth"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/berserktv" name="bs"/>
+
+  <project remote="bs" revision="master" name="bs-manifest" path="sources/bs-manifest">
+    <linkfile dest="setup-environment" src="setup-environment"/>
+    <linkfile dest="shell.sh" src="raspberry/shell.sh"/>
+    <linkfile dest="sources/base" src="raspberry/gatesgarth/router-bs"/>
+  </project>
+
+  <project remote="yocto" revision="gatesgarth" name="poky" path="sources/poky"/>
+  <project remote="oe"    revision="gatesgarth" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="gatesgarth" name="meta-raspberrypi"  path="sources/meta-raspberrypi"/>
+  <project remote="bs"    revision="rpi-gatesgarth" name="router-bs" path="sources/router-bs"/>
+</manifest>
