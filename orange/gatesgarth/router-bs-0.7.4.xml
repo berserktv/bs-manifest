@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="4" revision="hardknott"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/linux-sunxi" name="sunxi"/>
+  <remote fetch="https://github.com/berserktv" name="bs"/>
+
+  <project remote="bs" revision="master" name="bs-manifest" path="sources/bs-manifest">
+    <linkfile dest="setup-environment" src="setup-environment"/>
+    <linkfile dest="shell.sh" src="orange/shell-opi-zero.sh"/>
+    <linkfile dest="sources/base" src="orange/gatesgarth/router-bs"/>
+  </project>
+
+  <project remote="yocto" revision="hardknott" name="poky" path="sources/poky"/>
+  <project remote="oe"    revision="hardknott" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="sunxi" revision="hardknott" name="meta-sunxi"  path="sources/meta-sunxi"/>
+  <project remote="bs"    revision="opi-hardknott" name="router-bs" path="sources/router-bs"/>
+</manifest>
