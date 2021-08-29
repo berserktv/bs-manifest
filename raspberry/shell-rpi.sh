@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 MACHINE='raspberrypi' source ./setup-environment build
 
