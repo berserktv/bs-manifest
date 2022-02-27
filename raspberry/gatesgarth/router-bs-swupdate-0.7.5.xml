@@ -3,7 +3,8 @@
   <default sync-j="4" revision="gatesgarth"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
-  <remote fetch="https://github.com/berserktv" name="bs"/>
+  <!--<remote fetch="https://github.com/berserktv" name="bs"/>-->
+  <remote fetch="file:///home/yocto/rpi/router-sysd-sw/rep/" name="bs"/>
   <remote fetch="https://github.com/sbabic" name="sbabic"/>
 
   <project remote="bs" revision="master" name="bs-manifest" path="sources/bs-manifest">
