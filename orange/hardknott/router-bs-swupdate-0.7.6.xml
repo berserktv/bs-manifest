@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="4" revision="hardknott"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <!--<remote fetch="https://github.com/berserktv" name="bs"/>-->
+  <remote fetch="file:///home/yocto/rpi/router-sysd-sunxi/rep/" name="bs"/>
+  <remote fetch="https://github.com/sbabic" name="sbabic"/>
+
+  <project remote="bs" revision="master" name="bs-manifest" path="sources/bs-manifest">
+    <linkfile dest="setup-environment" src="setup-environment"/>
+    <linkfile dest="shell.sh" src="orange/shell-opi-zero.sh"/>
+    <linkfile dest="sources/base" src="raspberry/hardknott/router-bs-swupdate"/>
+  </project>
+
+  <project remote="yocto" revision="hardknott" name="poky" path="sources/poky"/>
+  <project remote="oe"    revision="hardknott" name="meta-openembedded" path="sources/meta-openembedded"/>
+  <project remote="yocto" revision="hardknott" name="meta-raspberrypi"  path="sources/meta-raspberrypi"/>
+  <project remote="sbabic" revision="hardknott" name="meta-swupdate"  path="sources/meta-swupdate"/>
+  <project remote="bs"    revision="rpi-hardknott-swupdate" name="router-bs" path="sources/router-bs"/>
+</manifest>
