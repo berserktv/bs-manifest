@@ -4,8 +4,7 @@
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/linux-sunxi" name="sunxi"/>
-  <!--<remote fetch="https://github.com/berserktv" name="bs"/>-->
-  <remote fetch="file:///home/yocto/rpi/router-sysd-sunxi/rep/" name="bs"/>
+  <remote fetch="https://github.com/berserktv" name="bs"/>
   <remote fetch="https://github.com/sbabic" name="sbabic"/>
 
   <project remote="bs" revision="master" name="bs-manifest" path="sources/bs-manifest">
