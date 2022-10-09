@@ -17,5 +17,5 @@
   <project remote="oe"    revision="hardknott" name="meta-openembedded" path="sources/meta-openembedded"/>
   <project remote="sunxi" revision="hardknott" name="meta-sunxi"  path="sources/meta-sunxi"/>
   <project remote="sbabic" revision="hardknott" name="meta-swupdate"  path="sources/meta-swupdate"/>
-  <project remote="bs"    revision="rpi-hardknott-swupdate" name="router-bs" path="sources/router-bs"/>
+  <project remote="bs"    revision="opi-hardknott-swupdate" name="router-bs" path="sources/router-bs"/>
 </manifest>
