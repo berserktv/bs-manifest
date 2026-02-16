@@ -3,7 +3,7 @@
 
   <default sync-j="4" revision="rocko"/>
 
-  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/YoeDistro" name="yocto"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/berserktv" name="bs"/>
 
